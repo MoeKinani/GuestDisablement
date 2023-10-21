@@ -1,0 +1,43 @@
+{
+    "type": "object",
+    "properties": {
+        "@@odata.context": {
+            "type": "string"
+        },
+        "value": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "displayName": {
+                        "type": "string"
+                    },
+                    "id": {
+                        "type": "string"
+                    },
+                    "signInActivity": {
+                        "type": "object",
+                        "properties": {
+                            "lastSignInDateTime": {
+                                "type": "string"
+                            },
+                            "lastSignInRequestId": {
+                                "type": "string"
+                            },
+                            "lastNonInteractiveSignInDateTime": {
+                                "type": "string"
+                            },
+                            "lastNonInteractiveSignInRequestId": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                },
+                "required": [
+                    "displayName",
+                    "id"
+                ]
+            }
+        }
+    }
+}
